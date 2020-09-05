@@ -20,6 +20,7 @@ function App() {
       <Navigation />
       <Home />
       <Skills />
+      <div className="parallax"></div>
       <Projects />
       {/* <Contact /> */}
 

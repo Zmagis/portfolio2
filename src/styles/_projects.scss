@@ -1,0 +1,82 @@
+@import './variables';
+
+@mixin l {
+  @media (max-width: #{$screen-l}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: #{$screen-md}) {
+    @content;
+  }
+}
+
+@mixin ms {
+  @media (max-width: #{$screen-ms}) {
+    @content;
+  }
+}
+
+.project-container {
+  .inner-container {
+    width: 65vw;
+    margin: auto;
+  }
+  .image {
+    width: 45vw;
+    &::after {
+      position: absolute;
+      content: ' ';
+      top: 0px;
+      left: 0px;
+      width: 45vw;
+      height: 100%;
+      z-index: 10;
+      background-color: $background;
+      opacity: 0.3;
+    }
+    &:hover {
+      &::after {
+        opacity: 0;
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    @include l {
+      width: 70%;
+    }
+  }
+  .project {
+    margin: 40px 20px;
+    position: relative;
+    .info {
+      width: 25vw;
+      position: absolute;
+      top: 28%;
+      right: 0;
+      text-align: right;
+      z-index: 100;
+      .dsc {
+        background: $accent;
+        padding: 10px 20px 20px 20px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+      }
+      i {
+        padding: 5px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      h2 {
+        padding: 5px;
+      }
+      @include l {
+        width: 30%;
+      }
+    }
+  }
+}
