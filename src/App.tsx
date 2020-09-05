@@ -21,7 +21,7 @@ function App() {
       <Home />
       <Skills />
       <Projects />
-      <Contact />
+      {/* <Contact /> */}
 
       {/* {window.location.pathname === '/' ? null : <Navigation />} */}
       {/* <Modal showModal={showModal} /> */}

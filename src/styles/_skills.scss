@@ -1,0 +1,81 @@
+@import './variables';
+
+@mixin md {
+  @media (max-width: #{$screen-md}) {
+    @content;
+  }
+}
+
+@mixin ms {
+  @media (max-width: #{$screen-ms}) {
+    @content;
+  }
+}
+
+.skills-container {
+  height: 100vh;
+  h1 {
+    padding-bottom: 1em;
+  }
+  h2 {
+    color: $eyed;
+  }
+  h1 {
+    @include md {
+      font-size: 1.1rem;
+    }
+  }
+  h2 {
+    @include md {
+      font-size: 1rem;
+    }
+  }
+  .inner-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 5%;
+  }
+  span {
+    color: white;
+  }
+  .skills-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    flex-wrap: wrap;
+
+    .logo-container {
+      width: 100px;
+      margin: 1.5vh;
+      padding: 1.5vh;
+      text-align: center;
+      @include md {
+        width: 70px;
+      }
+      p {
+        color: $secondary;
+      }
+    }
+    img {
+      height: 50px;
+      width: 50px;
+      filter: grayscale(95%);
+      &:hover {
+        filter: none;
+      }
+      @include md {
+        height: 30px;
+        width: 30px;
+      }
+    }
+    p {
+      @include md {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

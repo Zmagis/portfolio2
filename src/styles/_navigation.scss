@@ -1,6 +1,6 @@
 @import './variables';
 
-nav {
+.Nav {
   background-color: #f5f6f40a !important;
   letter-spacing: 0.2em;
   position: fixed;
@@ -9,20 +9,20 @@ nav {
   display: flex;
   width: 100vw;
   padding: 0px 20px;
-}
-ul {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-li {
-  list-style: none;
-  margin: 10px;
-  padding: 10px;
-  list-style: none;
-  text-decoration: none;
-}
-.Ul li a {
-  text-decoration: none;
-  color: white;
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  li {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    text-decoration: none;
+  }
+  .Ul li a {
+    text-decoration: none;
+    color: white;
+  }
 }
