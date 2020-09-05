@@ -1,25 +1,50 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+
+import { Navigation } from './components/nav/Navigation';
+import { Home } from './components/home/Home';
+import { Projects } from './components/Projects';
+import { Skills } from './components/Skills';
+import { Contact } from './components/Contact';
+// import Modal from './components/Modal';
+
+// import './App.css';
+import './styles/styles.css';
 
 function App() {
+  const location = useLocation();
+  console.log(window.location.pathname);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navigation />
+      <Home />
+      <Skills />
+      <Projects />
+      <Contact />
+
+      {/* {window.location.pathname === '/' ? null : <Navigation />} */}
+      {/* <Modal showModal={showModal} /> */}
+      {/* <AnimatePresence
+        // exitBeforeEnter
+        // onExitComplete={() => setShowModal(false)}
+      > */}
+      {/* <Switch location={location} key={location.key}>
+        <Route path="/projects">
+          <Projects />
+        </Route>
+        <Route path="/skills">
+          <Skills />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
+        <Route path="/" exact>
+          <Home />
+        </Route>
+      </Switch> */}
+      {/* </AnimatePresence> */}
+    </>
   );
 }
 

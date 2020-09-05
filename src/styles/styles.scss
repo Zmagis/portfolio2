@@ -1,0 +1,23 @@
+@import './variables', './navigation', './home';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $background;
+  color: $primary;
+  overflow-x: hidden;
+  //   margin-top: 65px;
+}
+
+.active {
+  color: $eyed !important;
+}
+
+.container {
+  width: 100vw;
+  //   position: relative;
+}
