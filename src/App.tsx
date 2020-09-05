@@ -22,7 +22,7 @@ function App() {
       <Skills />
       <div className="parallax"></div>
       <Projects />
-      {/* <Contact /> */}
+      <Contact />
 
       {/* {window.location.pathname === '/' ? null : <Navigation />} */}
       {/* <Modal showModal={showModal} /> */}

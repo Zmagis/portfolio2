@@ -342,6 +342,70 @@
   }
 }
 
+/* ECDEE3
+  738475
+  73D8B4
+  9D5A3C
+  2B3235
+  
+  F1F0EE
+  99969B
+  CF5F37
+  B17D61
+  463C43
+  
+  F5F6F4
+  A3AFB8
+  E06848
+  9B7150
+  394E53 */
+.left i {
+  position: fixed;
+  bottom: 0;
+  left: 3vw;
+  color: #f5f6f4;
+}
+
+.left i a {
+  color: inherit;
+}
+
+.left i::after {
+  content: '';
+  display: block;
+  background: #f5f6f4;
+  color: white;
+  width: 2px;
+  height: 5vh;
+  position: relative;
+  left: 6px;
+  margin-top: 15px;
+}
+
+.right {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  position: fixed;
+  bottom: 0px;
+  right: 3vw;
+}
+
+.right span {
+  padding: 15px;
+}
+
+.right::after {
+  content: '';
+  display: inline-block;
+  background: #f5f6f4;
+  color: white;
+  width: 1px;
+  height: 15vh;
+  position: relative;
+  right: 2.5px;
+}
+
 * {
   margin: 0;
   padding: 0;

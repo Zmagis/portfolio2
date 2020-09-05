@@ -1,0 +1,43 @@
+@import './variables';
+
+.left i {
+  position: fixed;
+  bottom: 0;
+  left: 3vw;
+  color: $primary;
+  a {
+    color: inherit;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    background: $primary;
+    color: white;
+    width: 2px;
+    height: 5vh;
+    position: relative;
+    left: 6px;
+    margin-top: 15px;
+  }
+}
+
+.right {
+  writing-mode: vertical-rl;
+  position: fixed;
+  bottom: 0px;
+  right: 3vw;
+  span {
+    padding: 15px;
+  }
+  &::after {
+    content: '';
+    display: inline-block;
+    background: $primary;
+    color: white;
+    width: 1px;
+    height: 15vh;
+    position: relative;
+    right: 2.5px;
+  }
+}
