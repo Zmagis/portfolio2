@@ -9,22 +9,28 @@ const About = () => {
         <h2>A LITTLE BIT ABOUT ME</h2>
         <p>Hey! My name is Eglė and I'm a web developer.</p>
         <p>
-          A year ago I graduated from Vilnius University with Biochemistry
-          Bachelor degree. Since I felt miserable working in a
-          laboratory, kitchen
-          like environment, without actually cooking meals I could taste,
-          changing my career path seemed like the only option for me.
+          One year ago I graduated from Vilnius University with a Biochemistry
+          Bachelor degree. I felt miserable working in a laboratory, it reminded
+          me of a kitchen in which I couldn’t actually taste the meals that I
+          cooked, and so the only option seemed to change my career path.
         </p>
         <p>
-          Somehow I chose to try programming. Even though I didn't even know what was 
-          HTML at the time. The more time I spent the harder I found myself to leave 
-          my cozy place in front of my computer screen. With no doubt,
-          programming is what brings me joy, excitement to know and create more
-          every single day.
+          I chose to try programming, even though at the time I didn't even know
+          what HTML was. The more time I spent learning to code, the harder I
+          found it was for me to leave my cozy place in front of my computer
+          screen. Without a doubt, programming is what brings me joy and
+          excitement to learn and create more every single day.
+        </p>
+        <p>
+          I took many courses online on platforms such as Udemy, Scrimba, 
+          FreeCodeCamp. Successfully finished European Digital Bootcamp.
+          Experienced what it is like to work with agile team and create
+          real-life project while being on Month with IT internship. And
+          now my hunger for real-life projects is even bigger.
         </p>
         {/* <p>
-          When I'm not in front of a computer screen, I'm probably climbing,
-          hiking or dancing lindyhop.
+          In those rare occasions when I'm not in front of a computer screen,
+          I'm probably climbing, hiking or dancing lindyhop.
         </p> */}
       </div>
       <div className="image">

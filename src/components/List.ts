@@ -15,8 +15,10 @@ import ts from '../img/logos/ts.jpg';
 import Hike from '../img/projects/TheHike.png';
 import ImageApp from '../img/projects/images.png';
 import Form from '../img/projects/form.png';
-import Infinite from '../img/projects/demo.gif';
-import Shop from '../img/projects/shop.gif';
+// import Infinite from '../img/projects/demo.gif';
+import Infinite from '../img/projects/infinite.png';
+// import Shop from '../img/projects/shop.gif';
+import Shop from '../img/projects/shop.png';
 import Leon from '../img/projects/leon2.png';
 
 export const logos = [

@@ -15,6 +15,11 @@ const Contact = () => {
             initial={{ rotate: -45, opacity: 0, x: '-100px' }}
             animate={{ rotate: 0, opacity: 1, x: 0 }}
             transition={{ type: 'tween', duration: 1.5, delay: 1 }}
+            whileHover={{
+              scale: 1.5,
+              y: [0, -5, 0, -5, 0],
+              transition: { duration: 0.3 },
+            }}
           ></motion.i>
         </a>
       </div>
