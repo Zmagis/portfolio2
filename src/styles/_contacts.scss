@@ -1,5 +1,11 @@
 @import './variables';
 
+@mixin sm {
+  @media (max-width: #{$screen-sm}) {
+    @content;
+  }
+}
+
 .left i {
   position: fixed;
   bottom: 0;
@@ -20,6 +26,9 @@
     left: 6px;
     margin-top: 15px;
   }
+  @include sm {
+    opacity: 0;
+  }
 }
 
 .right {
@@ -39,5 +48,8 @@
     height: 15vh;
     position: relative;
     right: 2.5px;
+  }
+  @include sm {
+    opacity: 0;
   }
 }

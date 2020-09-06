@@ -11,7 +11,7 @@ body {
   background: $background;
   color: $primary;
   overflow-x: hidden;
-  //   margin-top: 65px;
+  font-family: 'Playfair Display', serif;
 }
 
 .active {
@@ -20,7 +20,6 @@ body {
 
 .container {
   width: 100vw;
-  //   position: relative;
 }
 
 .parallax {
@@ -31,6 +30,8 @@ body {
   align-items: center;
   /* Set a specific height */
   height: 20vh;
+  // width: 110vw;
+  // margin-left: 100px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;

@@ -17,7 +17,7 @@ function App() {
   console.log(window.location.pathname);
   return (
     <>
-      <Navigation />
+      {/* <Navigation /> */}
       <Home />
       <Skills />
       <div className="parallax"></div>

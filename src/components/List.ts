@@ -10,6 +10,7 @@ import sql from '../img/logos/sql.png';
 import git from '../img/logos/git.png';
 import java from '../img/logos/java.png';
 import nodejs from '../img/logos/nodejs.png';
+import ts from '../img/logos/ts.jpg';
 
 import Hike from '../img/projects/TheHike.png';
 import ImageApp from '../img/projects/images.png';
@@ -23,6 +24,7 @@ export const logos = [
   { name: 'CSS', pic: css },
   { name: 'SASS', pic: sass },
   { name: 'JS', pic: js },
+  { name: 'TS', pic: ts },
   { name: 'REACT', pic: react },
   { name: 'REDUX', pic: redux },
   { name: 'NODEJS', pic: nodejs },
@@ -30,7 +32,7 @@ export const logos = [
   { name: 'JAVA', pic: java },
   { name: 'SQL', pic: sql },
   { name: 'GIT', pic: git },
-  { name: 'GIMP', pic: gimp },
+  // { name: 'GIMP', pic: gimp },
 ];
 
 export const list = [
@@ -38,7 +40,7 @@ export const list = [
     id: 12,
     name: 'LeOn',
     description:
-      'A website for students and teachers to make virtual learning process easier. Login as student with username: eglgus or as teacher with username: matram and in both cases password is: password',
+      '"LeOn - Learning Online" is an educational platform for students and teachers to make learning and teaching processes online easier. Functionalities include video calls, chat rooms, lesson descriptions, live schedule... To explore an application login with username: eglgus and password: password.',
     tech: 'ReactJS, TS, Java',
     img: Leon,
     link: 'https://java-menuo-su-it.northeurope.cloudapp.azure.com/',
@@ -48,7 +50,7 @@ export const list = [
     id: 10,
     name: 'Shop',
     description:
-      'Shop Website with admin page. Please contact for live demonstration (eglegustaite@gmail.com).',
+      'E-shop has a minimalistic design which ensures that shopping is quick and easy. In case you want to sell your own items - create an account, fill the form to describe your item for sale.',
     tech: 'ReactJS, Redux, NodeJS, SQL',
     img: Shop,
     link: '',
@@ -69,7 +71,7 @@ export const list = [
     id: 7,
     name: 'Form App',
     description:
-      'An application whose purpose is to fill a form with random question and store them.',
+      'One of those random websites with a strange purpose. Fill the form with you random question or thought and it will be displayed along with the others.',
     tech: 'ReactJS, firebase',
     img: Form,
     link: 'https://zmagis.github.io/form',
@@ -82,14 +84,14 @@ export const list = [
       'A responsive single-page Image App that provides an infinite scroll experience.',
     tech: 'ReactJS, Node, Flickr API',
     img: Infinite,
-    link:
-      'https://5f512abd0699ff5b3d2fc8a5--sleepy-nightingale-a8cec9.netlify.app/',
+    link: 'https://sleepy-nightingale-a8cec9.netlify.app',
     github: 'https://github.com/Zmagis/Infinite-scroll',
   },
   {
     id: 6,
     name: 'Image App',
-    description: 'Image search application with the ability to save keywords.',
+    description:
+      'Website to search images by keywords with added functionality to save keywords in order to go back to those results faster afterward.',
     tech: 'ReactJS, Redux, Unsplash API',
     img: ImageApp,
     link: 'https://zmagis.github.io/image-app/',
@@ -98,7 +100,8 @@ export const list = [
   {
     id: 5,
     name: 'The Hike',
-    description: 'Event application with countdown timer and animations.',
+    description:
+      'Website for the upcoming fake event to hike in beautiful forests - in Švenčionėliai.',
     tech: 'ReactJS',
     img: Hike,
     link: 'https://optimistic-bhabha-7ca5a0.netlify.com/',
