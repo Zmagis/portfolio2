@@ -1,21 +1,64 @@
 @import './variables';
 
+@mixin l {
+  @media (max-width: #{$screen-l}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: #{$screen-md}) {
+    @content;
+  }
+}
+@mixin ms {
+  @media (max-width: #{$screen-md-s}) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: #{$screen-sm}) {
+    @content;
+  }
+}
+
 .about-container {
   width: 60vw;
   height: 90vh;
   margin: auto;
   display: flex;
+  @include l {
+    width: 90vw;
+    height: 100vh;
+  }
+  @include m {
+    height: 105vh;
+  }
+  @include ms {
+    height: 115vh;
+  }
   .text {
     text-align: left;
     width: 70%;
     margin: auto;
     letter-spacing: 0.4px;
+    @include md {
+      width: 80%;
+    }
 
     h2 {
       margin-bottom: 20px;
+      @include md {
+        font-size: 1.2rem;
+      }
     }
     p {
       margin-bottom: 15px;
+      font-size: 0.9em;
+      @include md {
+        font-size: 0.8rem;
+      }
     }
   }
   .image {
@@ -24,6 +67,9 @@
     height: 200px;
     position: relative;
     border: 1px $accent ridge;
+    @include l {
+      display: none;
+    }
     img {
       border-radius: 50%;
       height: 100%;
