@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
   return (
@@ -9,12 +10,22 @@ const Contact = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-linkedin-in"></i>
+          <motion.i
+            className="fab fa-linkedin-in"
+            initial={{ rotate: -45, opacity: 0, x: '-100px' }}
+            animate={{ rotate: 0, opacity: 1, x: 0 }}
+            transition={{ type: 'tween', duration: 1.5, delay: 1 }}
+          ></motion.i>
         </a>
       </div>
-      <div className="right">
+      <motion.div
+        className="right"
+        initial={{ y: 1000 }}
+        animate={{ y: 10 }}
+        transition={{ type: 'spring', stiffness: 35, delay: 1.5 }}
+      >
         <span>eglegustaite@gmail.com</span>
-      </div>
+      </motion.div>
     </>
   );
 };

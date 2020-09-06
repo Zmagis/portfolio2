@@ -3,7 +3,7 @@ import css from '../img/logos/css.png';
 import js from '../img/logos/js.png';
 import react from '../img/logos/react.png';
 import redux from '../img/logos/redux.png';
-import gimp from '../img/logos/gimp.png';
+// import gimp from '../img/logos/gimp.png';
 import sass from '../img/logos/sass.png';
 import python from '../img/logos/python.png';
 import sql from '../img/logos/sql.png';

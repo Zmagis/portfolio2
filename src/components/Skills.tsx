@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 import { logos } from './List';
 
@@ -6,17 +7,26 @@ const Skills = () => {
   return (
     <div className="container skills-container">
       <div className="inner-container">
-        <h1>Some technologies I have worked with:</h1>
+        <h1 style={{ fontSize: '1.8rem', marginBottom: 20 }}>
+          Technologies I have worked with:
+        </h1>
         <div>
           <h2 style={{ textAlign: 'start' }}>
             const skills <span>{`= {`}</span>
           </h2>
           <div className="skills-box">
             {logos.map((logo) => (
-              <div key={logo.name} className="logo-container">
+              <motion.div
+                key={logo.name}
+                className="logo-container"
+                whileHover={{
+                  scale: 1.2,
+                  transition: { duration: 0.2 },
+                }}
+              >
                 <img className="logo" src={logo.pic} alt="" />
                 <p>{logo.name}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
           <h2>

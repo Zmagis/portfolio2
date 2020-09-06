@@ -406,8 +406,6 @@
 
 .project-container .project .info i:hover {
   cursor: pointer;
-  -webkit-filter: drop-shadow(3px 3px 2px rgba(247, 247, 247, 0.507));
-          filter: drop-shadow(3px 3px 2px rgba(247, 247, 247, 0.507));
 }
 
 .project-container .project .info h2 {
@@ -465,7 +463,7 @@
   display: block;
   background: #f5f6f4;
   color: white;
-  width: 2px;
+  width: 1px;
   height: 5vh;
   position: relative;
   left: 6px;
@@ -506,6 +504,73 @@
   .right {
     opacity: 0;
   }
+}
+
+/* ECDEE3
+  738475
+  73D8B4
+  9D5A3C
+  2B3235
+  
+  F1F0EE
+  99969B
+  CF5F37
+  B17D61
+  463C43
+  
+  F5F6F4
+  A3AFB8
+  E06848
+  9B7150
+  394E53 */
+.about-container {
+  width: 60vw;
+  height: 80vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-container .text {
+  text-align: left;
+  width: 70%;
+  margin: auto;
+  letter-spacing: 0.4px;
+}
+
+.about-container .text h2 {
+  margin-bottom: 20px;
+}
+
+.about-container .text p {
+  margin-bottom: 15px;
+}
+
+.about-container .image {
+  margin: auto;
+  border-radius: 50%;
+  height: 200px;
+  position: relative;
+  border: 1px #9b7150 ridge;
+}
+
+.about-container .image img {
+  border-radius: 50%;
+  height: 100%;
+}
+
+.about-container .image::after {
+  position: absolute;
+  content: '';
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  z-index: 10;
+  background-color: #9b7150;
+  opacity: 0.2;
 }
 
 * {
