@@ -1,6 +1,6 @@
 import React from 'react';
 import me from '../img/me.jpg';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 
 const About = () => {
   return (
@@ -22,11 +22,12 @@ const About = () => {
           excitement to learn and create more every single day.
         </p>
         <p>
-          I took many courses online on platforms such as Udemy, Scrimba, 
-          FreeCodeCamp. Successfully finished European Digital Bootcamp.
-          Experienced what it is like to work with agile team and create
-          real-life project while being on Month with IT internship. And
-          now my hunger for real-life projects is even bigger.
+          I took numerous online courses on platforms like Udemy, Scrimba,
+          FreeCodeCamp. I have successfully finished the European Digital
+          Bootcamp; I have also experienced what it is like to work with an
+          agile team on a real-life project, when I participated in the project
+          A Month with IT. And now my hunger for new challenges and real-life
+          projects is bigger than ever.
         </p>
         {/* <p>
           In those rare occasions when I'm not in front of a computer screen,
