@@ -52,7 +52,7 @@ export const list = [
     id: 10,
     name: 'Shop',
     description:
-      'E-shop has a minimalistic design which ensures that shopping is quick and easy. In case you want to sell your own items - create an account, fill the form to describe item for sale.',
+      'E-shop with a minimalistic design ensures that shopping is quick and easy. Also, the website allows you to sell your own items - create an account, fill the form to describe the item for sale.',
     tech: 'ReactJS, Redux, NodeJS, SQL',
     img: Shop,
     link: '',
