@@ -3,7 +3,7 @@ import React from 'react';
 // import { AnimatePresence } from 'framer-motion';
 
 // import { Navigation } from './components/nav/Navigation';
-import { Home } from './components/home/Home';
+import { Home } from './components/Home';
 import { Projects } from './components/Projects';
 import { Skills } from './components/Skills';
 import { Contact } from './components/Contact';

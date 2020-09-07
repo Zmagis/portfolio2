@@ -1,6 +1,5 @@
 import React from 'react';
 import me from '../img/me.jpg';
-// import { motion } from 'framer-motion';
 
 const About = () => {
   return (
