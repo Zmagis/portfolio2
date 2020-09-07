@@ -6,6 +6,11 @@
   margin: auto;
   display: flex;
 
+  span {
+    color: $eyed;
+    // text-decoration: underline;
+  }
+
   @include l {
     width: 90vw;
     height: 100vh;
@@ -21,6 +26,7 @@
     width: 70%;
     margin: auto;
     letter-spacing: 0.4px;
+
     @include md {
       width: 80%;
     }

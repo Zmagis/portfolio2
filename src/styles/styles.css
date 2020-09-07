@@ -534,6 +534,10 @@
   display: flex;
 }
 
+.about-container span {
+  color: #e06848;
+}
+
 @media (max-width: 1125px) {
   .about-container {
     width: 90vw;
