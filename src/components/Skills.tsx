@@ -7,13 +7,13 @@ const Skills = () => {
   return (
     <div className="container skills-container">
       <div className="inner-container">
-        <h1 style={{ fontSize: '1.8rem', marginBottom: 20 }}>
+        <h2 style={{ fontSize: '1.8rem', marginBottom: 20 }}>
           Technologies I have worked with:
-        </h1>
+        </h2>
         <div>
-          <h2 style={{ textAlign: 'start' }}>
+          <h3 style={{ textAlign: 'start' }}>
             const skills <span>{`= {`}</span>
-          </h2>
+          </h3>
           <div className="skills-box">
             {logos.map((logo) => (
               <motion.div
@@ -29,9 +29,9 @@ const Skills = () => {
               </motion.div>
             ))}
           </div>
-          <h2>
+          <h3>
             <span>{`};`}</span>
-          </h2>
+          </h3>
         </div>
       </div>
       {/* <ul>

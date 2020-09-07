@@ -9,6 +9,28 @@ $screen-md: 850px;
 $screen-md-s: 600px;
 $screen-sm: 360px;
 
+@mixin l {
+  @media (max-width: #{$screen-l}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: #{$screen-md}) {
+    @content;
+  }
+}
+@mixin ms {
+  @media (max-width: #{$screen-md-s}) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: #{$screen-sm}) {
+    @content;
+  }
+}
 /* ECDEE3
   738475
   73D8B4

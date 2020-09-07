@@ -1,28 +1,5 @@
 @import './variables';
 
-@mixin l {
-  @media (max-width: #{$screen-l}) {
-    @content;
-  }
-}
-
-@mixin md {
-  @media (max-width: #{$screen-md}) {
-    @content;
-  }
-}
-@mixin ms {
-  @media (max-width: #{$screen-md-s}) {
-    @content;
-  }
-}
-
-@mixin sm {
-  @media (max-width: #{$screen-sm}) {
-    @content;
-  }
-}
-
 .project-container {
   .inner-container {
     width: 65vw;

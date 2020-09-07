@@ -14,22 +14,21 @@
 
 .skills-container {
   height: 100vh;
-  h1 {
-    padding-bottom: 1em;
-  }
+  margin-bottom: 5vh;
   h2 {
-    color: $eyed;
-  }
-  h1 {
+    padding-bottom: 1em;
     @include md {
       font-size: 1.1rem;
     }
   }
-  h2 {
+  h3 {
+    color: $eyed;
+    letter-spacing: 1px;
     @include md {
       font-size: 1rem;
     }
   }
+
   .inner-container {
     height: 100%;
     display: flex;

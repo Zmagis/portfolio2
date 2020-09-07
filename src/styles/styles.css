@@ -149,24 +149,26 @@
   394E53 */
 .skills-container {
   height: 100vh;
-}
-
-.skills-container h1 {
-  padding-bottom: 1em;
+  margin-bottom: 5vh;
 }
 
 .skills-container h2 {
-  color: #e06848;
-}
-
-@media (max-width: 850px) {
-  .skills-container h1 {
-    font-size: 1.1rem;
-  }
+  padding-bottom: 1em;
 }
 
 @media (max-width: 850px) {
   .skills-container h2 {
+    font-size: 1.1rem;
+  }
+}
+
+.skills-container h3 {
+  color: #e06848;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 850px) {
+  .skills-container h3 {
     font-size: 1rem;
   }
 }
@@ -536,6 +538,12 @@
   .about-container {
     width: 90vw;
     height: 100vh;
+  }
+}
+
+@media (max-width: 850px) {
+  .about-container {
+    height: 105vh;
   }
 }
 

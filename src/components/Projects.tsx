@@ -22,23 +22,24 @@ const Projects = () => {
                   className="fab fa-github fa-lg"
                   whileHover={{
                     scale: 1.5,
-                    // rotate: [0, 45, -45, 45, -45, 0],
                     y: [0, -5, 0, -5, 0],
                     transition: { duration: 0.5 },
                   }}
                 ></motion.i>
               </a>
-              <a href={item.link} target="_blank" rel="noopener noreferrer">
-                <motion.i
-                  className="fas fa-external-link-alt fa-lg"
-                  whileHover={{
-                    scale: 1.5,
-                    y: [0, -5, 0, -5, 0],
+              {item.link === '' ? null : (
+                <a href={item.link} target="_blank" rel="noopener noreferrer">
+                  <motion.i
+                    className="fas fa-external-link-alt fa-lg"
+                    whileHover={{
+                      scale: 1.5,
+                      y: [0, -5, 0, -5, 0],
 
-                    transition: { duration: 0.5 },
-                  }}
-                ></motion.i>
-              </a>
+                      transition: { duration: 0.5 },
+                    }}
+                  ></motion.i>
+                </a>
+              )}
             </div>
           </div>
         ))}

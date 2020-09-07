@@ -1,38 +1,16 @@
 @import './variables';
 
-@mixin l {
-  @media (max-width: #{$screen-l}) {
-    @content;
-  }
-}
-
-@mixin md {
-  @media (max-width: #{$screen-md}) {
-    @content;
-  }
-}
-@mixin ms {
-  @media (max-width: #{$screen-md-s}) {
-    @content;
-  }
-}
-
-@mixin sm {
-  @media (max-width: #{$screen-sm}) {
-    @content;
-  }
-}
-
 .about-container {
   width: 60vw;
   height: 90vh;
   margin: auto;
   display: flex;
+
   @include l {
     width: 90vw;
     height: 100vh;
   }
-  @include m {
+  @include md {
     height: 105vh;
   }
   @include ms {

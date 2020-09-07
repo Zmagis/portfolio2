@@ -42,17 +42,17 @@ export const list = [
     id: 12,
     name: 'LeOn',
     description:
-      '"LeOn - Learning Online" is an educational platform for students and teachers to make learning and teaching processes online easier. Functionalities include video calls, chat rooms, lesson descriptions, live schedule... To explore an application login with username: eglgus and password: password.',
+      '"LeOn - Learning Online" is an educational platform for students and teachers to make learning and teaching online easier. Functionalities include video calls, chat rooms, live schedule with detailed descriptions... To explore an application login with username: eglgus and password: password.',
     tech: 'ReactJS, TS, Java',
     img: Leon,
     link: 'https://java-menuo-su-it.northeurope.cloudapp.azure.com/',
-    github: '',
+    github: 'https://github.com/Zmagis/leon',
   },
   {
     id: 10,
     name: 'Shop',
     description:
-      'E-shop has a minimalistic design which ensures that shopping is quick and easy. In case you want to sell your own items - create an account, fill the form to describe your item for sale.',
+      'E-shop has a minimalistic design which ensures that shopping is quick and easy. In case you want to sell your own items - create an account, fill the form to describe item for sale.',
     tech: 'ReactJS, Redux, NodeJS, SQL',
     img: Shop,
     link: '',
@@ -73,7 +73,7 @@ export const list = [
     id: 7,
     name: 'Form App',
     description:
-      'One of those random websites with a strange purpose. Fill the form with you random question or thought and it will be displayed along with the others.',
+      'One of those random websites with a strange purpose. Fill the form with your random question or thought and it will be displayed along with the others.',
     tech: 'ReactJS, firebase',
     img: Form,
     link: 'https://zmagis.github.io/form',
@@ -84,7 +84,7 @@ export const list = [
     name: 'Infinite Scroll',
     description:
       'A responsive single-page Image App that provides an infinite scroll experience.',
-    tech: 'ReactJS, Node, Flickr API',
+    tech: 'ReactJS, NodeJS, Flickr API',
     img: Infinite,
     link: 'https://sleepy-nightingale-a8cec9.netlify.app',
     github: 'https://github.com/Zmagis/Infinite-scroll',
